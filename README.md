@@ -18,6 +18,13 @@ And so on. The generated output will reflect the structure and "flavor" of the i
 ## Python Implementation
 The code is concise and readable, consisting of fewer than 25 lines. This code expects the number of words to be passed as a command-line argument and the input text to be provided on stdin.
 
+## References for Training Files
+You can use various freely accessible text files in txt format as input for Markov chain content generation. Below are the references to the texts used:
+
+- New Year's Message from the President of the Republic Sergio Mattarella (mattarella.txt): [https://www.quirinale.it/elementi/103914](https://www.quirinale.it/elementi/103914) (complete archive available here: [https://www.quirinale.it/ricerca/Discorsi](https://www.quirinale.it/ricerca/Discorsi))
+- Alice's Adventures in Wonderland by Lewis Carroll: [https://www.gutenberg.org/ebooks/28371](https://www.gutenberg.org/ebooks/28371)
+- Alice's Adventures in Wonderland (Italian) by Lewis Carroll: [https://www.gutenberg.org/ebooks/19033](https://www.gutenberg.org/ebooks/19033)
+
 ## Conclusion
 Despite its simplicity, the Markov chain algorithm reveals how a simple data structure and a random number generator can produce fascinating output. This project is an example of how elegant design choices can simplify code and enhance output.
 
