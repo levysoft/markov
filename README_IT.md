@@ -1,6 +1,8 @@
 # Markov Text Generator
 
-![Logo Markov Text Generator](logo.jpg)
+<p align="center">
+  <img src="logo.png" alt="Markov Text Generator">
+</p>
 
 ## Markov Chain for Generating Readable Nonsense
 Markov è un generatore di testo che utilizza una semplice catena di Markov per produrre testo leggibile ma privo di significato.
