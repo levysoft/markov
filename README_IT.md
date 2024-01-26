@@ -19,6 +19,13 @@ E così via. L'output generato rifletterà la struttura e il "sapore" del testo 
 ## Implementazione in Python
 Il codice è conciso e leggibile, composto da meno di 25 linee. Questo codice prevede che il numero di parole venga passato come argomento da riga di comando e che il testo di input venga fornito su stdin.
 
+## Riferimenti per i File di Training
+È possibile usare vari testi liberamente accessibili in formato txt come input per la generazione di contenuti la catena di Markov. Di seguito, i riferimenti ai testi utilizzati:
+
+- Messaggio di Fine Anno del Presidente della Repubblica Sergio Mattarella (mattarella.txt): [https://www.quirinale.it/elementi/103914](https://www.quirinale.it/elementi/103914) (qui trovate l'archivio completo: [https://www.quirinale.it/ricerca/Discorsi](https://www.quirinale.it/ricerca/Discorsi))
+- Le avventure d'Alice nel paese delle meraviglie by Lewis Carroll: [https://www.gutenberg.org/ebooks/28371](https://www.gutenberg.org/ebooks/28371)
+- Alice's Adventures in Wonderland by Lewis Carroll: [https://www.gutenberg.org/ebooks/19033](https://www.gutenberg.org/ebooks/19033)
+
 ## Conclusione
 L'algoritmo di catena di Markov, nonostante la sua semplicità, rivela come una struttura dati semplice e un generatore di numeri casuali possano produrre output affascinanti. Questo progetto è un esempio di come le scelte di design eleganti possano semplificare il codice e migliorare l'output.
 
