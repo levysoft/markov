@@ -1,4 +1,8 @@
-# Markov chain per generare nonsense leggibili
+# Markov Text Generator
+
+![Logo Markov Text Generator](logo.jpg)
+
+## Markov Chain for Generating Readable Nonsense
 Markov è un generatore di testo che utilizza una semplice catena di Markov per produrre testo leggibile ma privo di significato.
 Questa tecnica, sebbene generi prosa che non ha molto valore letterario, è sorprendentemente utile per prevedere la prossima parola, simile ai suggerimenti della tastiera del telefono.
 
