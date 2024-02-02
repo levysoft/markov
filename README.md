@@ -45,7 +45,7 @@ Where <number_of_words> is the number of words you want to generate and <text_fi
 ## Test markov.py
 
 ```bash
-python3 markov.py 100 ./training-texts/Alice-english.txt
+python3 markov.py 100 ./training-texts/Alice_en.txt
 
 Caterpillar seemed to be afraid of it. "No room! No room!" they cried
 out when they liked and left off quarreling with the other; the only
@@ -94,7 +94,7 @@ Where `<number_of_words>` is the number of words you want to generate and `<text
 ## Test markov-interactive.py
 
 ```bash
-python3 markov-interactive.py 100 ./training-texts/Alice_Adventures_in_Wonderland.txt
+python3 markov-interactive.py 100 ./training-texts/Alice_en.txt
 
 --------------------------------------------------
 Testo corrente:
