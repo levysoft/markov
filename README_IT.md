@@ -208,12 +208,8 @@ Alice afferrò il bimbo su e giù con molta delicatezza
 
 Questo comportamento rispecchia la natura delle catene di Markov, che si basano esclusivamente sulla frequenza delle parole senza considerare il contesto più ampio o la coerenza grammaticale.
 
-## Conclusioni
-Attraverso l'utilizzo di questo script, è possibile "remixare" testi esistenti in modi nuovi e creativi, esplorando la ricchezza linguistica e le possibilità narrative celate nei testi di partenza. È un esperimento affascinante nel campo della generazione di testo e un'introduzione pratica al concetto di catene di Markov.
-
-
 ## Conclusione
-L'algoritmo di catena di Markov, nonostante la sua semplicità, rivela come una struttura dati semplice e un generatore di numeri casuali possano produrre output affascinanti. Questo progetto è un esempio di come le scelte di design eleganti possano semplificare il codice e migliorare l'output.
+L'algoritmo di catena di Markov, nonostante la sua semplicità, è un'introduzione pratica al concetto di catene di Markov che rivela come una struttura dati semplice e un generatore di numeri casuali possano produrre output affascinanti, semplicemente "remixando" testi esistenti in modi nuovi e creativi.
 
 ## Licenza
 Questo progetto è liberamente ispirato e basato su concetti esposti nell'articolo di Ben Hoyt e nel libro di Kernighan e Pike. Sei libero di utilizzare, modificare e distribuire il codice come preferisci.
