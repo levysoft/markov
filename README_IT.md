@@ -60,7 +60,7 @@ fondo del pozzo?" Il Ghiro scosse il capo;
 ```
 
 ```bash
-python3 markov.py 100 mattarella.txt
+python3 markov.py 100 Mattarella.txt
   
 Coltivarne la cultura nel sentimento delle nuove generazioni. Di
 fronte alle quali si presentano oggi, e nel loro possibile avvenire,
