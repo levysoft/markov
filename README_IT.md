@@ -4,12 +4,14 @@
   <img src="logo.png" alt="Markov Text Generator">
 </p>
 
-## Markov Chain for Generating Readable Nonsense
+## Catena di Markov per la Generazione di Nonsense Leggibili
 Markov è un generatore di testo che utilizza una semplice catena di Markov per produrre testo leggibile ma privo di significato.
 Questa tecnica, sebbene generi prosa che non ha molto valore letterario, è sorprendentemente utile per prevedere la prossima parola, simile ai suggerimenti della tastiera del telefono.
 
 ## Ispirazione
 Questo progetto è stato ispirato dall'articolo "_Understanding Markov Chains_" di Ben Hoyt (https://benhoyt.com/writings/markov-chain/) e dal Capitolo 3 del libro "_The Practice of Programming_" di Kernighan and Pike (https://www.cs.princeton.edu/~bwk/tpop.webpage/). In particolare, l'articolo di Hoyt fornisce una spiegazione chiara dell'algoritmo e delle sue applicazioni, che vanno oltre la semplice generazione di testo.
+Successivamente mi sono ispirato all'articolo "_Markov Chains are the Original Language Models_" di Elijah Potter (https://elijahpotter.dev/articles/markov_chains_are_the_original_language_models) per creare anche una versione interattiva.
+
 
 ## Algoritmo
 L'algoritmo inizia con un testo di input da cui generare l'output. Per ogni coppia di parole nel testo di input, registra una lista delle possibili parole che possono seguire la coppia. Una volta costruita questa struttura dati, è possibile generare output di qualsiasi lunghezza. Si inizia con una coppia di parole presente nell'input e si sceglie casualmente una delle possibili terze parole. Si procede poi spostandosi di parola in parola.
