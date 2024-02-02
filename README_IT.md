@@ -34,7 +34,15 @@ Il codice è conciso e leggibile, composto da meno di 25 linee. Questo codice pr
 - Le avventure d'Alice nel paese delle meraviglie by Lewis Carroll: [https://www.gutenberg.org/ebooks/28371](https://www.gutenberg.org/ebooks/28371)
 - Alice's Adventures in Wonderland by Lewis Carroll: [https://www.gutenberg.org/ebooks/19033](https://www.gutenberg.org/ebooks/19033)
 
-## Test
+## Esecuzione
+Per eseguire lo script, utilizza il seguente comando:
+
+```bash
+python3 markov.py <numero_parole> <file_testo>
+```
+Dove `<numero_parole>` è il numero di parole che vuoi generare e `<file_testo>` è il percorso al file di testo di input.
+
+## Test markov.py
 
 ```bash
 python3 markov.py 100 Alice.txt
@@ -65,6 +73,143 @@ progresso inarrestabile. Destinato a modificare profondamente le
 nostre abitudini professionali, sociali, relazionali. Ci troviamo nel
 mezzo di quello che verrà ricordato come il grande balzo storico
 ```
+
+# Markov Interactive Script
+Ho pensato di creare lo script Python markov-interactive.py per implementare una catena di Markov in modo che generasse testo in modo interattivo, permettendo all'utente di scegliere la parola successiva basata su percentuali calcolate dalla frequenza di comparsa nel testo di input. 
+
+L'idea è di esplorare come le sequenze di parole (o "stati") si susseguono in un testo fornito, offrendo un'esperienza diretta nella generazione di testo basata su probabilità e consentendo agli utenti di influenzare direttamente il percorso della generazione del testo scegliendo tra le parole successive proposte.
+Ciò, implicitamente, permetterà di esplorare la varietà linguistica e le potenziali direzioni narrative che emergono dall'utilizzo di diversi testi di input.
+
+## Funzionamento
+Lo script lavora in due fasi principali:
+
+1. **Calcolo delle Percentuali:** Per ogni coppia di parole nel testo (`prefix`), calcola le percentuali per ogni possibile parola successiva. Questo passaggio si basa sul numero di volte che ogni parola segue direttamente la coppia data.
+
+2. **Selezione Interattiva:** Presenta all'utente una lista numerata di parole possibili con le relative percentuali. L'utente seleziona il numero corrispondente alla parola desiderata per costruire progressivamente una nuova sequenza di testo.
+
+## Esecuzione
+Per eseguire lo script, utilizza il seguente comando:
+
+```bash
+python3 markov-interactive.py <numero_parole> <file_testo>
+```
+
+Dove `<numero_parole>` è il numero di parole che vuoi generare e `<file_testo>` è il percorso al file di testo di input.
+
+## Test markov-interactive.py
+
+```bash
+python3 markov-interactive.py 100 Alice.txt
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò
+--------------------------------------------------
+
+Opzioni per 'Alice afferrò':
+1. il: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il
+--------------------------------------------------
+
+Opzioni per 'afferrò il':
+1. bimbo: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo
+--------------------------------------------------
+
+Opzioni per 'il bimbo':
+1. guaiva: 20.00%
+2. su: 20.00%
+3. in: 20.00%
+4. ma: 20.00%
+5. porcellino: 20.00%
+Scegli il numero della prossima parola: 2
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su
+--------------------------------------------------
+
+Opzioni per 'bimbo su':
+1. e: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e
+--------------------------------------------------
+
+Opzioni per 'su e':
+1. giù: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù
+--------------------------------------------------
+
+Opzioni per 'e giù':
+1. provando: 50.00%
+2. con: 50.00%
+Scegli il numero della prossima parola: 2
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù con
+--------------------------------------------------
+
+Opzioni per 'giù con':
+1. molta: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù con molta
+--------------------------------------------------
+
+Opzioni per 'con molta':
+1. allegrezza: 5.26%
+2. civiltà:: 5.26%
+3. gravità: 5.26%
+4. avvedutezza: 5.26%
+5. violenza,: 5.26%
+6. ansietà: 5.26%
+7. deferenza.: 5.26%
+8. curiosità,: 5.26%
+9. delicatezza.: 5.26%
+10. premura.: 5.26%
+11. delicatezza:: 5.26%
+12. garbatezza,: 10.53%
+13. curiosità.: 5.26%
+14. premura: 10.53%
+15. sollecitudine,: 5.26%
+16. enfasi,: 5.26%
+17. delicatezza: 5.26%
+Scegli il numero della prossima parola: 17
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù con molta delicatezza
+--------------------------------------------------
+```
+
+## Note sulla Generazione di Testo
+- **Testi con Limitata Varietà di Transizioni:** Se il testo di input presenta una limitata varietà di sequenze di parole, potresti notare che le percentuali tendono spesso al 100% per la parola successiva, indicando una sola opzione possibile.
+
+- **Uso di Testi Vari e Ricchi:** Utilizzando testi con maggiore varietà linguistica (come "Alice nel Paese delle Meraviglie"), lo script offre una gamma più ampia di scelte, rendendo la generazione di testo più dinamica e imprevedibile.
+
+Questo comportamento rispecchia la natura delle catene di Markov, che si basano esclusivamente sulla frequenza delle parole senza considerare il contesto più ampio o la coerenza grammaticale.
+
+## Conclusioni
+Attraverso l'utilizzo di questo script, è possibile "remixare" testi esistenti in modi nuovi e creativi, esplorando la ricchezza linguistica e le possibilità narrative celate nei testi di partenza. È un esperimento affascinante nel campo della generazione di testo e un'introduzione pratica al concetto di catene di Markov.
+
 
 ## Conclusione
 L'algoritmo di catena di Markov, nonostante la sua semplicità, rivela come una struttura dati semplice e un generatore di numeri casuali possano produrre output affascinanti. Questo progetto è un esempio di come le scelte di design eleganti possano semplificare il codice e migliorare l'output.
