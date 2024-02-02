@@ -9,6 +9,7 @@ Markov is a text generator that uses a simple Markov chain to produce readable b
 
 ## Inspiration
 This project was inspired by Ben Hoyt's article "_Understanding Markov Chains_"(https://benhoyt.com/writings/markov-chain/) and Chapter 3 of "_The Practice of Programming_" by Kernighan and Pike (https://www.cs.princeton.edu/~bwk/tpop.webpage/). Hoyt's article, in particular, provides a clear explanation of the algorithm and its applications beyond mere text generation.
+Subsequently, I was inspired by the article "_Markov Chains are the Original Language Models_" by Elijah Potter (https://elijahpotter.dev/articles/markov_chains_are_the_original_language_models) to also create an interactive version.
 
 ## Algorithm
 The algorithm starts with an input text from which to generate output. For each pair of words in the input text, it records a list of possible words that can follow the pair. Once this data structure is built, you can generate output of any length. Start with any pair of words that occurs in the input and randomly choose one of the possible third words. Then move along, using the second word in the pair and the newly generated word as the next pair.
