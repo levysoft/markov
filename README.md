@@ -177,6 +177,11 @@ Opzioni per 'away. "Please':
 
 This behavior reflects the nature of Markov chains, which rely solely on the frequency of words without considering broader context or grammatical coherence.
 
+## Thoughts on the Stochastic Parrot
+I embarked on this project to demonstrate that the term "stochastic parrot" is somewhat misplaced when applied to LLMs. Indeed, as you can see from my project, Markov chains are conceptually closer to the idea of a "stochastic parrot" compared to Large Language Models (LLMs) like GPT-3 and GPT-4. This is because Markov chains operate through generating sequences based on transition probabilities from one state to another, without any memory of the past except for the last state (or the last few states, in the case of higher-order Markov chains). This mechanism of generating text based on probabilities without an understanding of broader context or complex grammatical structures can be likened to a parrot repeating phrases without truly understanding their meaning.
+
+LLMs, on the other hand, utilize deep neural network architectures and advanced training techniques to "learn" from the vast amounts of text they are trained on. They are capable of generating text that not only follows the statistical probabilities of words or phrases based on the immediate context but can also reflect an understanding of a broader context, thematic coherence, and even notions of logic and common sense. Indeed, while earlier or simpler language models might seem to be merely "repeating" what they have seen, albeit with some random variability, more advanced models like GPT-3 or GPT-4 (and beyond) go well beyond mere repetition, demonstrating the ability to generate text that reflects an understanding of context, logical coherence, and even creativity.
+
 ## Conclusion
 The Markov chain algorithm, despite its simplicity, is a practical introduction to the concept of Markov chains that reveals how a simple data structure and a random number generator can produce fascinating outputs, simply by "remixing" existing texts in new and creative ways.
 
