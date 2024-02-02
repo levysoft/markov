@@ -32,7 +32,16 @@ You can use various freely accessible text files in txt format as input for Mark
 - Alice's Adventures in Wonderland by Lewis Carroll: [https://www.gutenberg.org/ebooks/28371](https://www.gutenberg.org/ebooks/28371)
 - Alice's Adventures in Wonderland (Italian) by Lewis Carroll: [https://www.gutenberg.org/ebooks/19033](https://www.gutenberg.org/ebooks/19033)
 
-## Test
+## Execution
+To run the script, use the following command:
+
+```bash
+python3 markov.py <number_of_words> <text_file>
+```
+
+Where <number_of_words> is the number of words you want to generate and <text_file> is the path to the input text file.
+
+## Test markov.py
 
 ```bash
 python3 markov.py 100 Alice.txt
@@ -63,6 +72,137 @@ progresso inarrestabile. Destinato a modificare profondamente le
 nostre abitudini professionali, sociali, relazionali. Ci troviamo nel
 mezzo di quello che verrà ricordato come il grande balzo storico
 ```
+# Markov Interactive Script
+I decided to create the Python script markov-interactive.py to implement a Markov chain in a way that it generates text interactively, allowing the user to choose the next word based on percentages calculated from the frequency of appearance in the input text.
+
+The idea is to explore how word sequences (or "states") follow each other in a provided text, offering a direct experience in text generation based on probabilities and allowing users to directly influence the path of text generation by choosing from the proposed next words.
+This implicitly will enable exploring linguistic variety and potential narrative directions that emerge from using different input texts.
+
+## How It Works
+The script operates in two main phases:
+
+1. **Percentage Calculation:** For each pair of words in the text (`prefix`), it calculates the percentages for each possible following word. This step is based on the number of times each word directly follows the given pair.
+
+2. **Interactive Selection:** Presents the user with a numbered list of possible words along with their percentages. The user selects the number corresponding to the desired word to progressively construct a new text sequence.
+
+## Execution
+To run the script, use the following command:
+
+```bash
+python3 markov-interactive.py <number_of_words> <text_file>
+```
+
+Where `<number_of_words>` is the number of words you want to generate and `<text_file>` is the path to the input text file.
+
+## Test markov-interactive.py
+
+```bash
+python3 markov-interactive.py 100 Alice.txt
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò
+--------------------------------------------------
+
+Opzioni per 'Alice afferrò':
+1. il: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il
+--------------------------------------------------
+
+Opzioni per 'afferrò il':
+1. bimbo: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo
+--------------------------------------------------
+
+Opzioni per 'il bimbo':
+1. guaiva: 20.00%
+2. su: 20.00%
+3. in: 20.00%
+4. ma: 20.00%
+5. porcellino: 20.00%
+Scegli il numero della prossima parola: 2
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su
+--------------------------------------------------
+
+Opzioni per 'bimbo su':
+1. e: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e
+--------------------------------------------------
+
+Opzioni per 'su e':
+1. giù: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù
+--------------------------------------------------
+
+Opzioni per 'e giù':
+1. provando: 50.00%
+2. con: 50.00%
+Scegli il numero della prossima parola: 2
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù con
+--------------------------------------------------
+
+Opzioni per 'giù con':
+1. molta: 100.00%
+Scegli il numero della prossima parola: 1
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù con molta
+--------------------------------------------------
+
+Opzioni per 'con molta':
+1. allegrezza: 5.26%
+2. civiltà:: 5.26%
+3. gravità: 5.26%
+4. avvedutezza: 5.26%
+5. violenza,: 5.26%
+6. ansietà: 5.26%
+7. deferenza.: 5.26%
+8. curiosità,: 5.26%
+9. delicatezza.: 5.26%
+10. premura.: 5.26%
+11. delicatezza:: 5.26%
+12. garbatezza,: 10.53%
+13. curiosità.: 5.26%
+14. premura: 10.53%
+15. sollecitudine,: 5.26%
+16. enfasi,: 5.26%
+17. delicatezza: 5.26%
+Scegli il numero della prossima parola: 17
+
+--------------------------------------------------
+Testo corrente:
+Alice afferrò il bimbo su e giù con molta delicatezza
+--------------------------------------------------
+```
+## Notes on Text Generation
+- **Texts with Limited Variety of Transitions:** If the input text has a limited variety of word sequences, you might notice that the percentages often tend towards 100% for the next word, indicating only one possible option.
+
+- **Using Diverse and Rich Texts:** By using texts with greater linguistic variety (such as "Alice in Wonderland"), the script offers a wider range of choices, making text generation more dynamic and unpredictable.
+
+This behavior reflects the nature of Markov chains, which rely solely on the frequency of words without considering broader context or grammatical coherence.
 
 ## Conclusion
 Despite its simplicity, the Markov chain algorithm reveals how a simple data structure and a random number generator can produce fascinating output. This project is an example of how elegant design choices can simplify code and enhance output.
