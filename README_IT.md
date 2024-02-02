@@ -33,6 +33,7 @@ Il codice è conciso e leggibile, composto da meno di 25 linee. Questo codice pr
 - Messaggio di Fine Anno del Presidente della Repubblica Sergio Mattarella (mattarella.txt): [https://www.quirinale.it/elementi/103914](https://www.quirinale.it/elementi/103914) (qui trovate l'archivio completo: [https://www.quirinale.it/ricerca/Discorsi](https://www.quirinale.it/ricerca/Discorsi))
 - Le avventure d'Alice nel paese delle meraviglie by Lewis Carroll: [https://www.gutenberg.org/ebooks/28371](https://www.gutenberg.org/ebooks/28371)
 - Alice's Adventures in Wonderland by Lewis Carroll: [https://www.gutenberg.org/ebooks/19033](https://www.gutenberg.org/ebooks/19033)
+- Discorso di John Fitzgerald Kennedy per l'accettazione della nomina a presidente dal Partito Democratico: [https://www.jfklibrary.org/learn/about-jfk/historic-speeches/acceptance-of-democratic-nomination-for-president](https://www.jfklibrary.org/learn/about-jfk/historic-speeches/acceptance-of-democratic-nomination-for-president)
 
 ## Esecuzione
 Per eseguire lo script, utilizza il seguente comando:
