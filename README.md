@@ -34,7 +34,7 @@ You can use various freely accessible text files in txt format as input for Mark
 ## Test
 
 ```bash
-python3 markov.py 100 < Alice.txt
+python3 markov.py 100 Alice.txt
 
 Bruco con disprezzo. "Chi siete _voi_?" E ciò li ricondusse da capo al
 principio della conversazione. Alice rispose con un cavallo di
@@ -49,7 +49,7 @@ fondo del pozzo?" Il Ghiro scosse il capo;
 ```
 
 ```bash
-python3 markov.py 100 < mattarella.txt
+python3 markov.py 100 mattarella.txt
   
 Coltivarne la cultura nel sentimento delle nuove generazioni. Di
 fronte alle quali si presentano oggi, e nel loro possibile avvenire,
