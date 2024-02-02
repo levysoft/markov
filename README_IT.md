@@ -12,7 +12,6 @@ Questa tecnica, sebbene generi prosa che non ha molto valore letterario, è sorp
 Questo progetto è stato ispirato dall'articolo "_Understanding Markov Chains_" di Ben Hoyt (https://benhoyt.com/writings/markov-chain/) e dal Capitolo 3 del libro "_The Practice of Programming_" di Kernighan and Pike (https://www.cs.princeton.edu/~bwk/tpop.webpage/). In particolare, l'articolo di Hoyt fornisce una spiegazione chiara dell'algoritmo e delle sue applicazioni, che vanno oltre la semplice generazione di testo.
 Successivamente mi sono ispirato all'articolo "_Markov Chains are the Original Language Models_" di Elijah Potter (https://elijahpotter.dev/articles/markov_chains_are_the_original_language_models) per creare anche una versione interattiva.
 
-
 ## Algoritmo
 L'algoritmo inizia con un testo di input da cui generare l'output. Per ogni coppia di parole nel testo di input, registra una lista delle possibili parole che possono seguire la coppia. Una volta costruita questa struttura dati, è possibile generare output di qualsiasi lunghezza. Si inizia con una coppia di parole presente nell'input e si sceglie casualmente una delle possibili terze parole. Si procede poi spostandosi di parola in parola.
 
@@ -210,6 +209,11 @@ Questo comportamento rispecchia la natura delle catene di Markov, che si basano 
 
 ## Conclusione
 L'algoritmo di catena di Markov, nonostante la sua semplicità, è un'introduzione pratica al concetto di catene di Markov che rivela come una struttura dati semplice e un generatore di numeri casuali possano produrre output affascinanti, semplicemente "remixando" testi esistenti in modi nuovi e creativi.
+
+## Considerazioni sul Pappagallo Stocastico
+Ho realizzato questo progetto per dimostrare che il termine Pappagallo stocastico è un po' fuori luogo per gli LLM. Infatti, come potete vedere dal mio progetto, le catene di Markov sono concettualmente più vicine all'idea di un "pappagallo stocastico" rispetto ai Large Language Models (LLM) come GPT-3 e GPT-4. Questo perché le catene di Markov operano attraverso la generazione di sequenze basate su probabilità di transizione da uno stato all'altro, senza memoria del passato tranne l'ultimo stato (o gli ultimi stati, nelle catene di Markov di ordine superiore). Questo meccanismo di generazione di testo basato sulle probabilità senza una comprensione del contesto più ampio o delle strutture grammaticali complesse può essere paragonato a un pappagallo che ripete frasi senza realmente comprendere il loro significato.
+
+I LLM, d'altro canto, utilizzano architetture di rete neurale profonda e tecniche di addestramento avanzate per "apprendere" dalla vasta quantità di testo su cui sono addestrati. Sono in grado di generare testo che non solo segue le probabilità statistiche di parole o frasi basate sul contesto immediato, ma che può anche riflettere una comprensione del contesto più ampio, della coerenza tematica, e persino di nozioni di logica e senso comune. In effetti, se i primi modelli di linguaggio o quelli più semplici, possono sembrare che stiano semplicemente "ripetendo" ciò che hanno visto, anche se con una certa variabilità casuale, i modelli più avanzati come GPT-3 o GPT-4 (e oltre) vanno ben oltre la semplice ripetizione, dimostrando capacità di generare testo che riflette comprensione del contesto, coerenza logica, e persino creatività.
 
 ## Licenza
 Questo progetto è liberamente ispirato e basato su concetti esposti nell'articolo di Ben Hoyt e nel libro di Kernighan e Pike. Sei libero di utilizzare, modificare e distribuire il codice come preferisci.
