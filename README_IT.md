@@ -45,7 +45,7 @@ Dove `<numero_parole>` è il numero di parole che vuoi generare e `<file_testo>`
 ## Test markov.py
 
 ```bash
-python3 markov.py 100 Alice.txt
+python3 markov.py 100 ./training-texts/Alice.txt
 
 Bruco con disprezzo. "Chi siete _voi_?" E ciò li ricondusse da capo al
 principio della conversazione. Alice rispose con un cavallo di
@@ -60,7 +60,7 @@ fondo del pozzo?" Il Ghiro scosse il capo;
 ```
 
 ```bash
-python3 markov.py 100 Mattarella.txt
+python3 markov.py 100 ./training-texts/Mattarella.txt
   
 Coltivarne la cultura nel sentimento delle nuove generazioni. Di
 fronte alle quali si presentano oggi, e nel loro possibile avvenire,
@@ -99,7 +99,7 @@ Dove `<numero_parole>` è il numero di parole che vuoi generare e `<file_testo>`
 ## Test markov-interactive.py
 
 ```bash
-python3 markov-interactive.py 100 Alice.txt
+python3 markov-interactive.py 100 ./training-texts/Alice.txt
 
 --------------------------------------------------
 Testo corrente:
