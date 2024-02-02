@@ -178,7 +178,7 @@ Opzioni per 'away. "Please':
 This behavior reflects the nature of Markov chains, which rely solely on the frequency of words without considering broader context or grammatical coherence.
 
 ## Conclusion
-Despite its simplicity, the Markov chain algorithm reveals how a simple data structure and a random number generator can produce fascinating output. This project is an example of how elegant design choices can simplify code and enhance output.
+The Markov chain algorithm, despite its simplicity, is a practical introduction to the concept of Markov chains that reveals how a simple data structure and a random number generator can produce fascinating outputs, simply by "remixing" existing texts in new and creative ways.
 
 ## License
 This project is freely inspired by and based on concepts presented in Ben Hoyt's article and Kernighan and Pike's book. You are free to use, modify, and distribute the code as you wish.
