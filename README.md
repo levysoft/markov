@@ -44,7 +44,7 @@ Where <number_of_words> is the number of words you want to generate and <text_fi
 ## Test markov.py
 
 ```bash
-python3 markov.py 100 Alice_Adventures_in_Wonderland
+python3 markov.py 100 ./training-texts/Alice-english.txt
 
 Caterpillar seemed to be afraid of it. "No room! No room!" they cried
 out when they liked and left off quarreling with the other; the only
@@ -56,7 +56,7 @@ said Alice to find my way into a cucumber-frame or something of that
 is--'Oh, 'tis love, 'tis love that makes you forget to talk." "The```
 
 ```bash
-python3 markov.py 100 Kennedy.txt
+python3 markov.py 100 ./training-texts/Kennedy.txt
   
 Richard Nixon did not measure to the safe mediocrity of the 1960's--a
 frontier of the New Frontier is here, whether we seek it or not.
@@ -93,7 +93,7 @@ Where `<number_of_words>` is the number of words you want to generate and `<text
 ## Test markov-interactive.py
 
 ```bash
-python3 markov-interactive.py 100 Alice_Adventures_in_Wonderland.txt
+python3 markov-interactive.py 100 ./training-texts/Alice_Adventures_in_Wonderland.txt
 
 --------------------------------------------------
 Testo corrente:
