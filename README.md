@@ -44,33 +44,29 @@ Where <number_of_words> is the number of words you want to generate and <text_fi
 ## Test markov.py
 
 ```bash
-python3 markov.py 100 Alice.txt
+python3 markov.py 100 Alice_Adventures_in_Wonderland
 
-Bruco con disprezzo. "Chi siete _voi_?" E ciò li ricondusse da capo al
-principio della conversazione. Alice rispose con un cavallo di
-vetturale, così per alimentare la conversazione. "Eh sì," rispose la
-cuoca. "Di melazzo," soggiunse una voce rabbiosa--quella del
-Coniglio:--"Gianni! Gianni! Dove sei?" E rispose una voce sonnolenta
-dietro ad un usciere, "Recatemi la lista de' cantanti. "Potete
-andare," disse il Bruco pipò senza dir nulla sullo sbaglio che il
-rimaner col Grifone non l'ha mai imparata." "Non ebbi tempo," rispose
-il Ghiro, "e si chiamavano Elce, Clelia e Tilla; e dimoravano nel
-fondo del pozzo?" Il Ghiro scosse il capo;
-```
+Caterpillar seemed to be afraid of it. "No room! No room!" they cried
+out when they liked and left off quarreling with the other; the only
+difficulty was that she had gone through that day. "You're looking for
+eggs, as it turned a corner, "Oh, my ears and whiskers, how late it's
+getting!" She was delighted to find herself talking familiarly with
+them, as if she had put on one knee. "I'm a poor man, Your Majesty,"
+said Alice to find my way into a cucumber-frame or something of that
+is--'Oh, 'tis love, 'tis love that makes you forget to talk." "The```
 
 ```bash
-python3 markov.py 100 mattarella.txt
+python3 markov.py 100 Kennedy.txt
   
-Coltivarne la cultura nel sentimento delle nuove generazioni. Di
-fronte alle quali si presentano oggi, e nel loro possibile avvenire,
-brutalità che pensavamo, ormai, scomparse; oltre che condannate dalla
-storia. La guerra non nasce da sola. Non basterebbe neppure la spinta
-di tante armi, che ne sono lo strumento di morte. Così diffuse. Sempre
-più letali. Fonte di enormi guadagni. Nasce da quel che c’è nell’animo
-degli uomini. Dalla mentalità che si autoalimenta, sta generando un
-progresso inarrestabile. Destinato a modificare profondamente le
-nostre abitudini professionali, sociali, relazionali. Ci troviamo nel
-mezzo di quello che verrà ricordato come il grande balzo storico
+Richard Nixon did not measure to the safe mediocrity of the 1960's--a
+frontier of the New Frontier is here, whether we seek it or not.
+Beyond that frontier are the uncharted areas of science and space,
+unsolved problems of peace and war, unconquered pockets of ignorance
+and prejudice, unanswered questions of poverty and surplus. It would
+be easier to shrink back from that frontier, to look to the Scriptural
+call: "Be strong and free, to overcome its hazards and its hardships,
+to conquer the enemies that threatened from without and within. Today
+some would say that those struggles are all over--that all
 ```
 # Markov Interactive Script
 I decided to create the Python script markov-interactive.py to implement a Markov chain in a way that it generates text interactively, allowing the user to choose the next word based on percentages calculated from the frequency of appearance in the input text.
@@ -97,105 +93,81 @@ Where `<number_of_words>` is the number of words you want to generate and `<text
 ## Test markov-interactive.py
 
 ```bash
-python3 markov-interactive.py 100 Alice.txt
+python3 markov-interactive.py 100 Alice_Adventures_in_Wonderland.txt
 
 --------------------------------------------------
 Testo corrente:
-Alice afferrò
+White Rabbit,
 --------------------------------------------------
 
-Opzioni per 'Alice afferrò':
-1. il: 100.00%
+Opzioni per 'White Rabbit,':
+1. trotting: 20.00%
+2. who: 40.00%
+3. with: 20.00%
+4. jumping: 20.00%
+Scegli il numero della prossima parola: 4
+
+--------------------------------------------------
+Testo corrente:
+White Rabbit, jumping
+--------------------------------------------------
+
+Opzioni per 'Rabbit, jumping':
+1. up: 100.00%
 Scegli il numero della prossima parola: 1
 
 --------------------------------------------------
 Testo corrente:
-Alice afferrò il
+White Rabbit, jumping up
 --------------------------------------------------
 
-Opzioni per 'afferrò il':
-1. bimbo: 100.00%
+Opzioni per 'jumping up':
+1. and: 50.00%
+2. in: 50.00%
 Scegli il numero della prossima parola: 1
 
 --------------------------------------------------
 Testo corrente:
-Alice afferrò il bimbo
+White Rabbit, jumping up and
 --------------------------------------------------
 
-Opzioni per 'il bimbo':
-1. guaiva: 20.00%
-2. su: 20.00%
-3. in: 20.00%
-4. ma: 20.00%
-5. porcellino: 20.00%
-Scegli il numero della prossima parola: 2
+Opzioni per 'up and':
+1. picking: 11.11%
+2. went: 11.11%
+3. walking: 11.11%
+4. said: 11.11%
+5. down: 11.11%
+6. walked: 11.11%
+7. stand: 11.11%
+8. there: 11.11%
+9. ran: 11.11%
+Scegli il numero della prossima parola: 3
 
 --------------------------------------------------
 Testo corrente:
-Alice afferrò il bimbo su
+White Rabbit, jumping up and walking
 --------------------------------------------------
 
-Opzioni per 'bimbo su':
-1. e: 100.00%
+Opzioni per 'and walking':
+1. away.: 100.00%
 Scegli il numero della prossima parola: 1
 
 --------------------------------------------------
 Testo corrente:
-Alice afferrò il bimbo su e
+White Rabbit, jumping up and walking away.
 --------------------------------------------------
 
-Opzioni per 'su e':
-1. giù: 100.00%
+Opzioni per 'walking away.':
+1. "Please: 100.00%
 Scegli il numero della prossima parola: 1
 
 --------------------------------------------------
 Testo corrente:
-Alice afferrò il bimbo su e giù
+White Rabbit, jumping up and walking away. "Please
 --------------------------------------------------
 
-Opzioni per 'e giù':
-1. provando: 50.00%
-2. con: 50.00%
-Scegli il numero della prossima parola: 2
-
---------------------------------------------------
-Testo corrente:
-Alice afferrò il bimbo su e giù con
---------------------------------------------------
-
-Opzioni per 'giù con':
-1. molta: 100.00%
-Scegli il numero della prossima parola: 1
-
---------------------------------------------------
-Testo corrente:
-Alice afferrò il bimbo su e giù con molta
---------------------------------------------------
-
-Opzioni per 'con molta':
-1. allegrezza: 5.26%
-2. civiltà:: 5.26%
-3. gravità: 5.26%
-4. avvedutezza: 5.26%
-5. violenza,: 5.26%
-6. ansietà: 5.26%
-7. deferenza.: 5.26%
-8. curiosità,: 5.26%
-9. delicatezza.: 5.26%
-10. premura.: 5.26%
-11. delicatezza:: 5.26%
-12. garbatezza,: 10.53%
-13. curiosità.: 5.26%
-14. premura: 10.53%
-15. sollecitudine,: 5.26%
-16. enfasi,: 5.26%
-17. delicatezza: 5.26%
-Scegli il numero della prossima parola: 17
-
---------------------------------------------------
-Testo corrente:
-Alice afferrò il bimbo su e giù con molta delicatezza
---------------------------------------------------
+Opzioni per 'away. "Please':
+1. come: 100.00%
 ```
 ## Notes on Text Generation
 - **Texts with Limited Variety of Transitions:** If the input text has a limited variety of word sequences, you might notice that the percentages often tend towards 100% for the next word, indicating only one possible option.
