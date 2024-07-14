@@ -1,5 +1,7 @@
 # Markov Text Generator
 
+[ [English](README.md) | [Italiano](README.it.md) ]
+
 <p align="center">
   <img src="logo.png" alt="Markov Text Generator">
 </p>
